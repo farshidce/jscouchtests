@@ -182,7 +182,7 @@ couchTests.list_views = function(debug) {
             '  Send(<<"[">>), ' +
             '  Fun = fun({Row}, Sep) -> ' +
             '    Val = couch_util:get_value(<<"key">>, Row, 23), ' +
-            '    Send(list_to_binary(Sep ++ integer_to_list(Val))), ' +
+            '    Send(list_to_binary(Sep ++ integer_to_list(round(Val)))), ' +
             '    {ok, ","} ' +
             '  end, ' +
             '  {ok, _} = FoldRows(Fun, ""), ' +
@@ -211,7 +211,7 @@ couchTests.list_views = function(debug) {
     headers: {"if-none-match": etag}
   });
   T(xhr.status == 304);
-  
+
   // confirm ETag changes with different POST bodies
   xhr = CouchDB.request("POST", "/test_suite_db/_design/lists/_list/basicBasic/basicView",
     {body: JSON.stringify({keys:[1]})}
@@ -230,7 +230,7 @@ couchTests.list_views = function(debug) {
   TEquals(10, resp.head.total_rows);
   TEquals(0, resp.head.offset);
   TEquals(11, resp.head.update_seq);
-  
+
   T(resp.rows.length == 10);
   TEquals(resp.rows[0], {"id": "0","key": 0,"value": "0"});
 
@@ -401,7 +401,7 @@ couchTests.list_views = function(debug) {
   T(db.save(viewOnlyDesignDoc).ok);
   var url = "/test_suite_db/_design/lists/_list/simpleForm/views/basicView" +
                 "?startkey=-3";
-  xhr = CouchDB.request("GET", url); 
+  xhr = CouchDB.request("GET", url);
   T(xhr.status == 200, "multiple design docs.");
   T(!(/Key: -4/.test(xhr.responseText)));
   T(/FirstKey: -3/.test(xhr.responseText));
@@ -412,7 +412,7 @@ couchTests.list_views = function(debug) {
   xhr = CouchDB.request("POST", url, {
     body: '{"keys":[-2,-4,-5,-7]}'
   });
-  
+
   T(xhr.status == 200, "multi key separate docs");
   T(!(/Key: -3/.test(xhr.responseText)));
   T(/Key: -7/.test(xhr.responseText));
