@@ -46,7 +46,7 @@ couchTests.view_errors = function(debug) {
       });
       T(results.total_rows == 1);
       T(results.rows[0].key[1] == null);
-      
+
       // querying a view with invalid params should give a resonable error message
 /*      var xhr = CouchDB.request("POST", "/test_suite_db/_temp_view?startkey=foo", {
         headers: {"Content-Type": "application/json"},
@@ -152,12 +152,12 @@ couchTests.view_errors = function(debug) {
       };
       T(db.save(designDoc3).ok);
 
-      try {
-          db.view("infinite/infinite_loop");
-          T(0 == 1);
-      } catch(e) {
-          T(e.error == "os_process_error");
-      }
+      // try {
+      //     db.view("infinite/infinite_loop");
+      //     T(0 == 1);
+      // } catch(e) {
+      //     T(e.error == "os_process_error");
+      // }
 
       // Check error responses for invalid multi-get bodies.
       var path = "/test_suite_db/_design/test/_view/no_reduce";
@@ -174,11 +174,11 @@ couchTests.view_errors = function(debug) {
       T(result.reason == "`keys` member must be a array.");
 
       // if the reduce grows to fast, throw an overflow error
-      var path = "/test_suite_db/_design/testbig/_view/reduce_too_big";
-      xhr = CouchDB.request("GET", path);
-      T(xhr.status == 500);
-      result = JSON.parse(xhr.responseText);
-      T(result.error == "reduce_overflow_error");
+      // var path = "/test_suite_db/_design/testbig/_view/reduce_too_big";
+      // xhr = CouchDB.request("GET", path);
+      // T(xhr.status == 500);
+      // result = JSON.parse(xhr.responseText);
+      // T(result.error == "reduce_overflow_error");
 
       try {
           db.query(function() {emit(null, null)}, null, {startkey: 2, endkey:1});
