@@ -1,0 +1,12 @@
+Usage: pyrun.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -s *.js, --script=*.js
+                        which script(s) to run
+  -o OUTPUT, --output=OUTPUT
+                        test results will be printed out in the given format
+  --timeout=TIMEOUT     timeout limit for each test
+  -n NODE, --node=NODE  couchdb ip , defaults to 127.0.0.1:5984
+  -x all_docs.js,basics.js, --exclusion-filter=all_docs.js,basics.js
+                        which scripts to exclude when running the tests
