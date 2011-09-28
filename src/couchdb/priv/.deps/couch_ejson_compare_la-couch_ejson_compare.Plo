@@ -1,0 +1,170 @@
+couch_ejson_compare_la-couch_ejson_compare.lo \
+  .libs/couch_ejson_compare_la-couch_ejson_compare.o:  \
+ couch_ejson_compare/couch_ejson_compare.c /usr/include/stdio.h \
+  /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/secure/_stdio.h \
+  /usr/include/secure/_common.h couch_ejson_compare/erl_nif_compat.h \
+  /usr/local/lib/erlang/usr/include/erl_nif.h \
+  /usr/local/lib/erlang/usr/include/erl_drv_nif.h /usr/include/stdlib.h \
+  /usr/include/Availability.h /usr/include/AvailabilityInternal.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h \
+  /usr/local/lib/erlang/usr/include/erl_int_sizes_config.h \
+  /usr/local/lib/erlang/usr/include/erl_nif_api_funcs.h \
+  /usr/local/include/unicode/ucol.h /usr/local/include/unicode/utypes.h \
+  /usr/local/include/unicode/umachine.h \
+  /usr/local/include/unicode/ptypes.h \
+  /usr/local/include/unicode/platform.h /usr/include/sys/types.h \
+  /usr/include/inttypes.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h \
+  /usr/local/include/unicode/urename.h \
+  /usr/local/include/unicode/uvernum.h /usr/local/include/unicode/utf.h \
+  /usr/local/include/unicode/utf8.h /usr/local/include/unicode/utf16.h \
+  /usr/local/include/unicode/utf_old.h \
+  /usr/local/include/unicode/uversion.h \
+  /usr/local/include/unicode/uconfig.h /usr/local/include/unicode/unorm.h \
+  /usr/local/include/unicode/uiter.h /usr/local/include/unicode/unorm2.h \
+  /usr/local/include/unicode/localpointer.h \
+  /usr/local/include/unicode/uset.h /usr/local/include/unicode/uchar.h \
+  /usr/local/include/unicode/parseerr.h /usr/local/include/unicode/uloc.h \
+  /usr/local/include/unicode/uenum.h \
+  /usr/local/include/unicode/ucasemap.h \
+  /usr/local/include/unicode/ustring.h /usr/local/include/unicode/putil.h
+
+/usr/include/stdio.h:
+
+/usr/include/_types.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/machine/_types.h:
+
+/usr/include/i386/_types.h:
+
+/usr/include/secure/_stdio.h:
+
+/usr/include/secure/_common.h:
+
+couch_ejson_compare/erl_nif_compat.h:
+
+/usr/local/lib/erlang/usr/include/erl_nif.h:
+
+/usr/local/lib/erlang/usr/include/erl_drv_nif.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/Availability.h:
+
+/usr/include/AvailabilityInternal.h:
+
+/usr/include/sys/wait.h:
+
+/usr/include/sys/signal.h:
+
+/usr/include/sys/appleapiopts.h:
+
+/usr/include/machine/signal.h:
+
+/usr/include/i386/signal.h:
+
+/usr/include/i386/_structs.h:
+
+/usr/include/sys/_structs.h:
+
+/usr/include/machine/_structs.h:
+
+/usr/include/mach/i386/_structs.h:
+
+/usr/include/sys/resource.h:
+
+/usr/include/machine/endian.h:
+
+/usr/include/i386/endian.h:
+
+/usr/include/sys/_endian.h:
+
+/usr/include/libkern/_OSByteOrder.h:
+
+/usr/include/libkern/i386/_OSByteOrder.h:
+
+/usr/include/alloca.h:
+
+/usr/include/machine/types.h:
+
+/usr/include/i386/types.h:
+
+/usr/include/i386/_types.h:
+
+/usr/local/lib/erlang/usr/include/erl_int_sizes_config.h:
+
+/usr/local/lib/erlang/usr/include/erl_nif_api_funcs.h:
+
+/usr/local/include/unicode/ucol.h:
+
+/usr/local/include/unicode/utypes.h:
+
+/usr/local/include/unicode/umachine.h:
+
+/usr/local/include/unicode/ptypes.h:
+
+/usr/local/include/unicode/platform.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/inttypes.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h:
+
+/usr/local/include/unicode/urename.h:
+
+/usr/local/include/unicode/uvernum.h:
+
+/usr/local/include/unicode/utf.h:
+
+/usr/local/include/unicode/utf8.h:
+
+/usr/local/include/unicode/utf16.h:
+
+/usr/local/include/unicode/utf_old.h:
+
+/usr/local/include/unicode/uversion.h:
+
+/usr/local/include/unicode/uconfig.h:
+
+/usr/local/include/unicode/unorm.h:
+
+/usr/local/include/unicode/uiter.h:
+
+/usr/local/include/unicode/unorm2.h:
+
+/usr/local/include/unicode/localpointer.h:
+
+/usr/local/include/unicode/uset.h:
+
+/usr/local/include/unicode/uchar.h:
+
+/usr/local/include/unicode/parseerr.h:
+
+/usr/local/include/unicode/uloc.h:
+
+/usr/local/include/unicode/uenum.h:
+
+/usr/local/include/unicode/ucasemap.h:
+
+/usr/local/include/unicode/ustring.h:
+
+/usr/local/include/unicode/putil.h:

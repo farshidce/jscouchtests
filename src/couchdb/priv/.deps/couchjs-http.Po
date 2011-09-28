@@ -1,0 +1,178 @@
+couchjs-http.o couchjs-http.o: couch_js/http.c ../../../config.h \
+  /usr/include/stdio.h /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/secure/_stdio.h \
+  /usr/include/secure/_common.h /usr/include/stdlib.h \
+  /usr/include/Availability.h /usr/include/AvailabilityInternal.h \
+  /usr/include/sys/wait.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/i386/_structs.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/mach/i386/_structs.h /usr/include/sys/resource.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/i386/_types.h /usr/include/string.h \
+  /usr/include/secure/_string.h /usr/local/include/js/jsapi.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h \
+  /usr/local/include/js/js-config.h /usr/local/include/js/jspubtd.h \
+  /usr/local/include/js/jstypes.h /usr/local/include/js/jsautocfg.h \
+  /usr/local/include/js/jsinttypes.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h \
+  /usr/local/include/js/jsotypes.h /usr/include/sys/types.h \
+  /usr/local/include/js/jscompat.h /usr/local/include/js/jslong.h \
+  /usr/local/include/js/jsproto.tbl /usr/local/include/js/jsversion.h \
+  /usr/local/include/js/jsutil.h /usr/local/include/curl/curl.h \
+  /usr/local/include/curl/curlver.h /usr/local/include/curl/curlbuild.h \
+  /usr/include/sys/socket.h /usr/include/machine/_param.h \
+  /usr/include/i386/_param.h /usr/local/include/curl/curlrules.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/syslimits.h \
+  /usr/include/limits.h /usr/include/machine/limits.h \
+  /usr/include/i386/limits.h /usr/include/i386/_limits.h \
+  /usr/include/sys/syslimits.h /usr/include/time.h \
+  /usr/include/_structs.h /usr/include/sys/time.h \
+  /usr/include/sys/_select.h /usr/local/include/curl/easy.h \
+  /usr/local/include/curl/multi.h /usr/local/include/curl/curl.h \
+  couch_js/utf8.h
+
+../../../config.h:
+
+/usr/include/stdio.h:
+
+/usr/include/_types.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/machine/_types.h:
+
+/usr/include/i386/_types.h:
+
+/usr/include/secure/_stdio.h:
+
+/usr/include/secure/_common.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/Availability.h:
+
+/usr/include/AvailabilityInternal.h:
+
+/usr/include/sys/wait.h:
+
+/usr/include/sys/signal.h:
+
+/usr/include/sys/appleapiopts.h:
+
+/usr/include/machine/signal.h:
+
+/usr/include/i386/signal.h:
+
+/usr/include/i386/_structs.h:
+
+/usr/include/sys/_structs.h:
+
+/usr/include/machine/_structs.h:
+
+/usr/include/mach/i386/_structs.h:
+
+/usr/include/sys/resource.h:
+
+/usr/include/machine/endian.h:
+
+/usr/include/i386/endian.h:
+
+/usr/include/sys/_endian.h:
+
+/usr/include/libkern/_OSByteOrder.h:
+
+/usr/include/libkern/i386/_OSByteOrder.h:
+
+/usr/include/alloca.h:
+
+/usr/include/machine/types.h:
+
+/usr/include/i386/types.h:
+
+/usr/include/i386/_types.h:
+
+/usr/include/string.h:
+
+/usr/include/secure/_string.h:
+
+/usr/local/include/js/jsapi.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h:
+
+/usr/local/include/js/js-config.h:
+
+/usr/local/include/js/jspubtd.h:
+
+/usr/local/include/js/jstypes.h:
+
+/usr/local/include/js/jsautocfg.h:
+
+/usr/local/include/js/jsinttypes.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h:
+
+/usr/local/include/js/jsotypes.h:
+
+/usr/include/sys/types.h:
+
+/usr/local/include/js/jscompat.h:
+
+/usr/local/include/js/jslong.h:
+
+/usr/local/include/js/jsproto.tbl:
+
+/usr/local/include/js/jsversion.h:
+
+/usr/local/include/js/jsutil.h:
+
+/usr/local/include/curl/curl.h:
+
+/usr/local/include/curl/curlver.h:
+
+/usr/local/include/curl/curlbuild.h:
+
+/usr/include/sys/socket.h:
+
+/usr/include/machine/_param.h:
+
+/usr/include/i386/_param.h:
+
+/usr/local/include/curl/curlrules.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/machine/limits.h:
+
+/usr/include/i386/limits.h:
+
+/usr/include/i386/_limits.h:
+
+/usr/include/sys/syslimits.h:
+
+/usr/include/time.h:
+
+/usr/include/_structs.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/sys/_select.h:
+
+/usr/local/include/curl/easy.h:
+
+/usr/local/include/curl/multi.h:
+
+/usr/local/include/curl/curl.h:
+
+couch_js/utf8.h:
