@@ -18,7 +18,7 @@ couchTests.form_submit = function(debug) {
 
     // PUT on existing DB should return 412 instead of 500
     var json = "{}";
-    var xhr = CouchDB.request("POST", "/test_suite_db/baz", {body: json});
+    var xhr = CouchDB.request("POST", "/test_suite_db/baz", {body: json, 'headers' : {'Referer' : CouchHTTP.prototype.base_url}});
     T(xhr.status == 415);
     result = JSON.parse(xhr.responseText);
     T(result.error, "bad_content_type");
