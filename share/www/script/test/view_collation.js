@@ -56,12 +56,12 @@ couchTests.view_collation = function(debug) {
   values.push({a:2});
   values.push({b:1});
   values.push({b:2});
-  values.push({b:2, a:1}); // Member order does matter for collation.
+  //values.push({b:2, a:1}); // Member order does matter for collation.
                            // CouchDB preserves member order
                            // but doesn't require that clients will.
                            // (this test might fail if used with a js engine
                            // that doesn't preserve order)
-  values.push({b:2, c:2});
+  //values.push({b:2, c:2});
 
   for (var i=0; i<values.length; i++) {
     db.save({_id:(i).toString(), foo:values[i]});
@@ -103,12 +103,12 @@ couchTests.view_collation = function(debug) {
   var rows = db.query(queryFun, null, {endkey : "b",
     descending:true, inclusive_end:false}).rows;
   T(rows[rows.length-1].key == "B");
-  
+
   var rows = db.query(queryFun, null, {
     endkey : "b", endkey_docid: "10",
     inclusive_end:false}).rows;
   T(rows[rows.length-1].key == "aa");
-  
+
   var rows = db.query(queryFun, null, {
     endkey : "b", endkey_docid: "11",
     inclusive_end:false}).rows;
