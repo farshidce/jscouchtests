@@ -4,3 +4,5 @@
 *.DS_*
 *.idea
 *.log
+report-*
+merged-js-files.txt
