@@ -109,12 +109,12 @@ if __name__ == "__main__":
     parser.add_option("-o", "--output",
                       dest="output", help="test results will be printed out in the given format",
                       default="xunit")
-    parser.add_option("--timeout", dest="timeout", help="timeout limit for each test", default="120")
+    parser.add_option("--timeout", dest="timeout", help="timeout limit for each test", default="500")
     parser.add_option("-n", "--node", dest="node", help="couchdb ip , defaults to 127.0.0.1:5984",
                       default="127.0.0.1:5984")
     parser.add_option("-x", "--exclusion-filter", dest="exclusion", default="",
                       help="which scripts to exclude when running the tests", metavar="all_docs.js,basics.js")
-   
+
 
     options, args = parser.parse_args()
     exclusion = options.exclusion
@@ -130,7 +130,7 @@ if __name__ == "__main__":
     logger.info("output : {0}".format(output))
     node = options.node
     logger.info("node : {0}".format(node))
-    # script can be abc.js or *.js 
+    # script can be abc.js or *.js
     # use file_finder to find all the files which match the given expression
     logger.info("finding files for script : {0}".format(script))
     #let' load all the scripts for now!
